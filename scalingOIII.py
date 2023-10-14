@@ -53,7 +53,7 @@ class scale:
 
         self.fline = self.fOIII - self.cont( self.xOIII, self.xct, self.fct )
 
-        idx = np.where(self.fline<0.0) #<---- This is removing the negative flux values near the line wings of the line observed towards the edges.
+        idx = np.where(self.fline<0.0) #<---- This is removing the negative flux values near the line wings of the line.
         self.fline[idx] = 0
   
     
